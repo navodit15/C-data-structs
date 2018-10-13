@@ -1,4 +1,5 @@
 def merger(arr, l, m, r): 
+    
 
     n1 = m - l + 1
 
@@ -96,7 +97,7 @@ def mergeSort(arr,l,r):
 
         # large l and h 
 
-        m = (l+(r-1))/2
+        m = (l+(r-1))//2
 
   
 
@@ -106,22 +107,22 @@ def mergeSort(arr,l,r):
 
         mergeSort(arr, m+1, r) 
 
-        merge(arr, l, m, r) 
+        merger(arr, l, m, r) 
 
   
 
   
 # Driver code to test above 
+N=input()
 
-arr = [12, 11, 13, 5, 6, 7] 
+arr = list(input())
+ 
 
-n = len(arr) 
-
-print ("Given array is") 
-
-for i in range(n): 
-
-    print ("%d" %arr[i]), 
+l=len(arr)
+if N==l:
+    print ("Given array is") 
+    for i in range(n): 
+        print ("%d" %arr[i]), 
 
   
 
