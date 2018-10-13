@@ -1,4 +1,4 @@
-def merge(arr, l, m, r): 
+def merger(arr, l, m, r): 
 
     n1 = m - l + 1
 
